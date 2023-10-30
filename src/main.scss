@@ -36,7 +36,7 @@ header{
       .sectionOne_img{
          width:100%
       }
-.sectionOne_div1{
+.sectionOne_div1, .sectionTwo_div4{
     display: flex;
     flex-direction: column;
       }
@@ -48,7 +48,7 @@ header{
           box-shadow: 1px 4px rgb(1, 24, 39);
           font-weight: bold;
       }
-.sectionOne_div1_link{
+.sectionOne_div1_link, .sectionTwo_div4_link{
           text-align: center;
           margin: 15px;
           color:rgb(54,118,157);
@@ -77,6 +77,48 @@ header{
       }
 
       /* this it sectionTwo */
+.sectionTwo_title_popularChallenges{
+  font-size:1.3em;
+  padding: 10px;
+}
+.sectionTwo_hacker_img{
+  width:100%
+}
+.sectionTwo_div1{
+  border: 1px solid black;
+  border-radius: 5px;
+  margin:20px;
+}
+.sectionTwo_title_room{
+   font-size:1.1em;
+   padding: 7px 0 0 13px;
+}
+.sectionTwo_div2{
+    display: flex; 
+    align-items: center;
+img{
+  padding-left:10px; 
+  width:5%;
+  height:auto;
+}
+}
+.sectionTwo_div2_2-6{
+  padding-left:10px;
+  font-size: 0.7em;
+}
+.sectionTwo_praetera{
+    font-size:0.8em;
+    padding:20px 10px;
+}
+.button_book_this_room{
+  background-color:rgb(227,23,10); 
+  color:white; 
+  font-size:0.7em;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin: 0 10px 15px 200px;
+}
+g
 
 
 
