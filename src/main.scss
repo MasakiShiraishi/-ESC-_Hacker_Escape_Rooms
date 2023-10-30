@@ -189,11 +189,45 @@ img{
   }
 }
 
-
-
-footer{
+.footer{
           background-color: rgb(1, 24, 39);
-          margin: auto;
+          margin-top: 30px;
+          padding: 60px 5px 50px 25px;
+    &_esc_hacker{
+      color:white;
+      font-size:0.8em;
+      font-weight: blod;
+    }
+    &_quodsi{
+      color:white;
+      font-size:0.6em;
+      padding-top: 10px;
+    }
+    &_navbar{
+      color:white;
+      
+      &_site_map, &_follow{ 
+        padding:30px 0 5px 0;       
+        font-size:0.8em;
+        font-weight: blod; 
+      }   
+      &_ul1, &_ul2, &_ul3{
+        list-style-type: none;
+      }
+     
+
+      &_ul1 a, &_ul2 a, &_ul3 a{
+        color:white;
+        text-decoration: none;
+        font-size:0.6em;
+        padding: 0;
+        margin:0;
+      }
+      &_ul2 {
+        padding-top:15px;
+      }
+    }
+   
 }
 @media screen and (min-width: 480px) {         
     .header_div_div{
