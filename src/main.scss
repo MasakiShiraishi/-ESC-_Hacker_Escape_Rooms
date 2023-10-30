@@ -81,13 +81,23 @@ header{
   font-size:1.3em;
   padding: 10px;
 }
+.sectionTwo_slider {
+  display: flex;
+  gap: 30px;
+  overflow-x: scroll;
+  margin: 0;
+}
+
 .sectionTwo_hacker_img{
   width:100%
 }
 .sectionTwo_div1{
-  border: 1px solid black;
-  border-radius: 5px;
+  min-width: 360px; 
+  border: 2px ridge ;
+  border-radius: 7px;
+  width: 480px;
   margin:20px;
+  box-shadow: 1px 2px rgb(1, 24, 39);
 }
 .sectionTwo_title_room{
    font-size:1.1em;
@@ -116,7 +126,7 @@ img{
   font-size:0.7em;
   padding: 10px 25px;
   border-radius: 5px;
-  margin: 0 10px 15px 200px;
+  margin: 0 10px 15px 170px;
 }
  /* this it sectionThree */
 .sectionThree{
