@@ -1,104 +1,110 @@
-*{
-          margin: 0;
-          padding:0;
-          font-size:24px;
-          font-family: "Roboto";
-          }
-          /* this is header section */
-header{
-          background-color: blue ;
-          margin: auto;   
-             padding: 20px 5px;
-             font-weight: bold;
-}
-.header img{
-          margin: 20px;
-}
-.header_div_div{
-          color: white;
-          margin-left: -10px;   
-          margin-top: 18px;  
-          font-size: 1em;              
-          display: flex;
-          flex-direction: column;          
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-family: "Roboto";
 }
 
-.header div{
-          display: flex;
-}   
+/* this is header section */
+header {
+  background-color: blue;
+  margin: auto;
+  padding: 20px 5px;
+  font-weight: bold;
+}
+
+.header img {
+  margin: 20px;
+}
+
+.header_div_div {
+  color: white;
+  margin-left: -10px;
+  margin-top: 18px;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.header div {
+  display: flex;
+}
+
 .header_navbar a {
-          text-decoration: none;
-          color: white;
-          display: none;
-        
-      }
-      /* This is sectionOne */
-      .sectionOne_img{
-         width:100%
-      }
-.sectionOne_div1{
+  text-decoration: none;
+  color: white;
+  display: none;
+}
+
+/* This is sectionOne */
+.sectionOne_img {
+  width: 100%;
+}
+
+.sectionOne_div1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.button_on_site_challenges {
+  background-color: rgb(138, 207, 229);
+  margin: 30px 60px;
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 4px rgb(1, 24, 39);
+  font-weight: bold;
+}
+
+.sectionOne_div1_link {
+  text-align: center;
+  margin: 15px;
+  color: rgb(54, 118, 157);
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+.sectionOne_div2 {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 10px;
+  padding: 20px 10px;
+}
+
+.sectionOne_div2_div_visiter_comment {
+  font-family: Italic;
+  letter-spacing: 0%;
+  margin-left: 15px;
+  font-size: 0.8em;
+}
+
+.sectionOne_div2_div_visiter_profil {
+  margin-left: 15px;
+  font-size: 0.7em;
+}
+
+.sectionOne_div2_div {
+  margin-bottom: 15%;
+}
+
+/* this it sectionTwo */
+footer {
+  background-color: rgb(1, 24, 39);
+  margin: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .header_div_div {
+    color: white;
+    margin-left: -10px;
+    margin-top: 18px;
+    font-size: 1em;
     display: flex;
-    flex-direction: column;
-      }
- .button_on_site_challenges{
-          background-color: rgb(138,207,229);
-          margin: 30px 60px;
-          padding: 25px 20px;
-          border-radius: 10px;
-          box-shadow: 1px 4px rgb(1, 24, 39);
-          font-weight: bold;
-      }
-.sectionOne_div1_link{
-          text-align: center;
-          margin: 15px;
-          color:rgb(54,118,157);
-          font-weight: bold;
-          font-size: 0.7em;
-      }
-
-      .sectionOne_div2{
-        display: flex;
-        flex-direction: row;
-        margin:20px 10px;
-        padding:20px 10px;
-      }      
-      .sectionOne_div2_div_visiter_comment{
-        font-family: Italic;
-        letter-spacing: 0%;
-        margin-left: 15px;
-        font-size: 0.8em;
-      }
-      .sectionOne_div2_div_visiter_profil{
-        margin-left: 15px;
-        font-size: 0.7em;
-      }
-      .sectionOne_div2_div{
-        margin-bottom: 15%;
-      }
-
-      /* this it sectionTwo */
-
-
-
-
-footer{
-          background-color: rgb(1, 24, 39);
-          margin: auto;
-}
-@media screen and (min-width: 480px) {         
-    .header_div_div{
-        color: white;
-        margin-left: -10px;   
-        margin-top: 18px;  
-        font-size: 1em;              
-        display: flex;
-        flex-direction:row;
-        
-}
-                .header_navbar a {
-                    display: inline; 
-                }
-                header{
-                    background-color:rgb(1, 24, 39);     
-          }
+    flex-direction: row;
+  }
+  .header_navbar a {
+    display: inline;
+  }
+  header {
+    background-color: rgb(1, 24, 39);
+  }
 }
