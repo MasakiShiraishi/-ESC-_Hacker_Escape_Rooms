@@ -43,10 +43,10 @@ header{
  .button_on_site_challenges{
           background-color: rgb(138,207,229);
           margin: 30px 60px;
-          padding: 25px 20px;
+          padding: 20px 20px;
           border-radius: 10px;
           box-shadow: 1px 4px rgb(1, 24, 39);
-          font-weight: bold;
+          font-size:0.9em;
       }
 .sectionOne_div1_link, .sectionTwo_div4_link{
           text-align: center;
@@ -83,7 +83,7 @@ header{
 }
 .sectionTwo_slider {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   overflow-x: scroll;
   margin: 0;
 }
@@ -92,7 +92,7 @@ header{
   width:100%
 }
 .sectionTwo_div1{
-  min-width: 360px; 
+  min-width: 300px; 
   border: 2px ridge ;
   border-radius: 7px;
   width: 480px;
@@ -126,7 +126,7 @@ img{
   font-size:0.7em;
   padding: 10px 25px;
   border-radius: 5px;
-  margin: 0 10px 15px 170px;
+  margin: 0 10px 15px 120px;
 }
  /* this it sectionThree */
 .sectionThree{
