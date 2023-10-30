@@ -136,7 +136,32 @@ header {
   margin: 0 10px 15px 200px;
 }
 
-g footer {
+/* this it sectionThree */
+.sectionThree {
+  background-color: rgb(1, 24, 39);
+  padding: 80px 0;
+  margin-top: 20px;
+}
+.sectionThree_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  margin-top: 30px;
+}
+.sectionThree_text {
+  text-align: center;
+  color: white;
+  font-size: 1.1em;
+}
+.sectionThree_button_reas_the_full_story {
+  background-color: rgb(1, 24, 39);
+  color: rgb(138, 207, 229);
+  border: 1px solid rgb(138, 207, 229);
+  padding: 10px 30px;
+}
+
+footer {
   background-color: rgb(1, 24, 39);
   margin: auto;
 }
