@@ -161,6 +161,28 @@ header {
   padding: 10px 30px;
 }
 
+.sectionFour_img {
+  width: 100%;
+  height: 70%;
+}
+.sectionFour_play_with {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 10px 12px;
+}
+.sectionFour_praeterea {
+  margin: 10px 12px;
+  font-size: 0.9em;
+}
+.sectionFour_button_book_on_site_today {
+  background-color: rgb(227, 23, 10);
+  color: white;
+  margin: 30px 25px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
 footer {
   background-color: rgb(1, 24, 39);
   margin: auto;
