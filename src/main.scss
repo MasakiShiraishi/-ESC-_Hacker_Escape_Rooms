@@ -335,6 +335,10 @@ header {
     object-fit: cover;
     width: 100vw;
     max-width: 100%;
+    @media screen and (min-width: 480px) {
+      width: 170vw;   
+      height: 250px;     
+    }
 
     @media screen and (min-width: 768px) {
       width: 150vw;
@@ -348,8 +352,8 @@ header {
     }
 
     @media screen and (min-width: 1200px) {
-      width: 80vw;
-      height: 460px;
+      width: 83vw;
+      height: 480px;
     }
   }
 
@@ -357,12 +361,24 @@ header {
     font-weight: bold;
     font-size: 1.2em;
     margin: 10px 12px;
+    @media screen and (min-width: 480px) {
+      font-size: 0.9em;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 1.2em;
+        }
 
   }
 
   &_praeterea {
     margin: 10px 12px;
     font-size: 0.9em;
+    @media screen and (min-width: 480px) {
+      font-size: 0.7em;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 0.9em;
+        }
   }
 
   &_button_book_on_site_today {
@@ -372,6 +388,12 @@ header {
     padding: 10px 25px;
     border-radius: 5px;
     font-size: 0.9em;
+    @media screen and (min-width: 480px) {
+      font-size: 0.5em;      
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 0.9em;
+      }
 
   }
 }
@@ -400,6 +422,10 @@ header {
     object-fit: cover;
     width: 100vw;
     max-width: 100%;
+    @media screen and (min-width: 480px) {
+      width: 170vw;   
+      height: 250px;     
+    }
 
     @media screen and (min-width: 768px) {
       width: 150vw;
@@ -408,26 +434,37 @@ header {
     }
 
     @media screen and (min-width: 900px) {
-
+      width: 140vw;
       height: 400px;
     }
 
     @media screen and (min-width: 1200px) {
-
-      height: 460px;
+      width: 83vw;
+      height: 480px;
     }
-
   }
 
   &_play_online {
     font-weight: bold;
     font-size: 1.2em;
     margin: 10px 12px;
+    @media screen and (min-width: 480px) {
+      font-size: 0.9em;      
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 1.2em;      
+    }
   }
 
   &_praeterea {
     margin: 10px 12px;
     font-size: 0.9em;
+    @media screen and (min-width: 480px) {
+      font-size: 0.7em;      
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 0.9em;      
+    }
   }
 
   &_button_see_all_challenges {
@@ -437,6 +474,12 @@ header {
     padding: 10px 25px;
     border-radius: 5px;
     font-size: 0.9em;
+    @media screen and (min-width: 480px) {
+      font-size: 0.5em;      
+    }
+    @media screen and (min-width: 768px) {
+      font-size:  0.9em;    
+    }
   }
 }
 

@@ -342,6 +342,12 @@ header {
   width: 100vw;
   max-width: 100%;
 }
+@media screen and (min-width: 480px) {
+  .sectionFour_img {
+    width: 170vw;
+    height: 250px;
+  }
+}
 @media screen and (min-width: 768px) {
   .sectionFour_img {
     width: 150vw;
@@ -357,8 +363,8 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .sectionFour_img {
-    width: 80vw;
-    height: 460px;
+    width: 83vw;
+    height: 480px;
   }
 }
 .sectionFour_play_with {
@@ -366,9 +372,29 @@ header {
   font-size: 1.2em;
   margin: 10px 12px;
 }
+@media screen and (min-width: 480px) {
+  .sectionFour_play_with {
+    font-size: 0.9em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sectionFour_play_with {
+    font-size: 1.2em;
+  }
+}
 .sectionFour_praeterea {
   margin: 10px 12px;
   font-size: 0.9em;
+}
+@media screen and (min-width: 480px) {
+  .sectionFour_praeterea {
+    font-size: 0.7em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sectionFour_praeterea {
+    font-size: 0.9em;
+  }
 }
 .sectionFour_button_book_on_site_today {
   background-color: rgb(227, 23, 10);
@@ -377,6 +403,16 @@ header {
   padding: 10px 25px;
   border-radius: 5px;
   font-size: 0.9em;
+}
+@media screen and (min-width: 480px) {
+  .sectionFour_button_book_on_site_today {
+    font-size: 0.5em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sectionFour_button_book_on_site_today {
+    font-size: 0.9em;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -402,6 +438,12 @@ header {
   width: 100vw;
   max-width: 100%;
 }
+@media screen and (min-width: 480px) {
+  .sectionFive_img {
+    width: 170vw;
+    height: 250px;
+  }
+}
 @media screen and (min-width: 768px) {
   .sectionFive_img {
     width: 150vw;
@@ -411,12 +453,14 @@ header {
 }
 @media screen and (min-width: 900px) {
   .sectionFive_img {
+    width: 140vw;
     height: 400px;
   }
 }
 @media screen and (min-width: 1200px) {
   .sectionFive_img {
-    height: 460px;
+    width: 83vw;
+    height: 480px;
   }
 }
 .sectionFive_play_online {
@@ -424,9 +468,29 @@ header {
   font-size: 1.2em;
   margin: 10px 12px;
 }
+@media screen and (min-width: 480px) {
+  .sectionFive_play_online {
+    font-size: 0.9em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sectionFive_play_online {
+    font-size: 1.2em;
+  }
+}
 .sectionFive_praeterea {
   margin: 10px 12px;
   font-size: 0.9em;
+}
+@media screen and (min-width: 480px) {
+  .sectionFive_praeterea {
+    font-size: 0.7em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sectionFive_praeterea {
+    font-size: 0.9em;
+  }
 }
 .sectionFive_button_see_all_challenges {
   background-color: rgb(227, 23, 10);
@@ -435,6 +499,16 @@ header {
   padding: 10px 25px;
   border-radius: 5px;
   font-size: 0.9em;
+}
+@media screen and (min-width: 480px) {
+  .sectionFive_button_see_all_challenges {
+    font-size: 0.5em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sectionFive_button_see_all_challenges {
+    font-size: 0.9em;
+  }
 }
 
 .footer {
