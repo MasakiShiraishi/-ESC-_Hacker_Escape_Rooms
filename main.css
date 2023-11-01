@@ -70,6 +70,12 @@ header {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .sectionOne_section {
+    margin-top: -70px;
+  }
+}
+
 .sectionOne_div1,
 .sectionTwo_div4 {
   display: flex;

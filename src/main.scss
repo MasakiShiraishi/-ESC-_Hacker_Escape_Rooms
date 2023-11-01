@@ -68,6 +68,11 @@ header {
     object-fit: cover;
   }
 }
+.sectionOne_section{
+  @media screen and (min-width: 480px) {
+    margin-top:-70px
+  }
+}
 
 .sectionOne_div1,
 .sectionTwo_div4 {
