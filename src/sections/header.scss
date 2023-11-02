@@ -21,27 +21,23 @@ header {
         
           @include breakpoint ($small) {
             margin-top: 65px;
-            display: flex;
-            flex-direction: row;
+            @include row;
           }
         
           &_h1 {
             @include breakpoint ($small) {
               font-size: 1.6em;
-              margin-left: 15px;
-              
+              margin-left: 15px;              
             }
           }
         }
         
         .header_navbar a {
-          text-decoration: none;
-          color: white;
-          display: none;
-        
+           text-decoration: none;
+           color: white;
+           display: none;        
           @include breakpoint ($small) {
-            display: inline;
-        
+            display: inline;        
           }
         }
         

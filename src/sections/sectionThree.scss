@@ -1,0 +1,42 @@
+/* this it sectionThree */
+.sectionThree {
+          background-color: rgb(1, 24, 39);
+          padding: 80px 0;
+          margin-top: 20px;
+        
+          @include breakpoint ($small) {
+            padding-top: 100px;
+            min-height: 30vh;
+        
+          }
+        
+          &_div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5vh;
+            margin-top: 30px;
+          }
+        
+          &_text {
+            text-align: center;
+            color: white;
+            font-size: 1.1em;
+        
+            @include breakpoint ($small) {
+              overflow-wrap: break-word;
+            }
+        
+            @media screen and (min-width: 900px) {
+              padding: 0 230px;
+              overflow-wrap: break-word;
+            }
+          }
+        
+          &_button_reas_the_full_story {
+            background-color: rgb(1, 24, 39);
+            color: rgb(138, 207, 229);
+            border: 1px solid rgb(138, 207, 229);
+            padding: 10px 30px;
+          }
+        }

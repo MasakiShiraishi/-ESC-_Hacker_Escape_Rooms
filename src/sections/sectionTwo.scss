@@ -15,8 +15,7 @@
             margin-top: 30px;
             overflow-x: hidden;  
             gap: 0;
-            justify-content: center; 
-            
+            justify-content: center;             
          }
         }
         
@@ -77,6 +76,16 @@
          }
         }
         
+        .sectionTwo_div4 {
+          @include column;
+        
+          @include breakpoint ($small){
+            flex-direction: row-reverse;
+            justify-content: center;
+          }
+        
+        }
+        
         .button_book_this_room {
           background-color: rgb(227, 23, 10);
           color: white;
@@ -87,4 +96,22 @@
           @include breakpoint ($small) {
             font-size: 0.5em;
          }
+        }
+        
+        .sectionTwo_div4_link {
+          text-align: center;
+          margin: 15px;
+          color: rgb(54, 118, 157);
+          font-weight: bold;
+          font-size: 0.7em;
+        
+          @include breakpoint ($small) {
+            color: white;
+            background-color: red;
+            text-decoration: none;
+            margin: 30px 60px;
+            padding: 22px 30px;
+            border-radius: 10px;
+            font-size: 0.9em;
+          }
         }

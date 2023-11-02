@@ -1,0 +1,68 @@
+.footer {
+          background-color: rgb(1, 24, 39);
+          margin-top: 30px;
+          padding: 40px 20px 50px 30px;
+        
+          &_div {
+            @include breakpoint ($small) {
+             @include row;
+              align-items: center;
+              justify-content: space-evenly;
+            }
+            &_div1 a,
+            &_div2 a, 
+            &_div3 a{
+             @include column;
+              color: white;
+              text-decoration: none;
+              font-size: 0.6em;
+              padding: 0;
+              margin: 0;
+            }
+            &_div1{
+              @include breakpoint ($small) {
+                padding-left: 20px;
+              }
+            }
+            &_div2 {
+              padding-top: 15px;
+              @include breakpoint ($small) {
+                padding: 0 0 0 20px;
+              }
+            }
+            
+          }
+        
+          &_esc_hacker {
+            color: white;
+            font-size: 0.8em;
+            font-weight: blod;
+            @include breakpoint ($small) {
+              padding-top: 40px;
+            }
+          }
+        
+          &_quodsi {
+            color: white;
+            font-size: 0.6em;
+            padding-top: 10px;
+          }
+        
+          &_site_map,
+          &_follow {
+            color: white;
+            padding: 30px 0 5px 0;
+            font-size: 0.8em;
+            font-weight: blod;
+          }
+        
+          &_site_map {
+            @include breakpoint ($small) {
+              padding-top: 60px;
+            }
+        
+            
+          } 
+        
+          
+        }
