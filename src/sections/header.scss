@@ -1,49 +1,56 @@
-header {
+.header {
           background-color: rgb(1, 24, 39);
           margin: auto;
           padding: 20px 5px;
-          font-weight: bold;
-        }
-        
-        .header_div1 {
+          font-weight: bold;        
+        &_div1 {
           display: flex;
-        }
-        
-        .header_img {
+        }        
+        &_img {
           margin: 20px;
+          @include breakpoint ($small) {
+            margin: 10px 10px 20px 20px;
+            width:100px;
+            height:62px;          
+          }
         }
-        
-        .header_div2 {
+        &_div2 {
           color: white;
           margin-left: -10px;
           margin-top: 18px;
-          font-size: 1em;
-        
+          font-size: 1em;        
           @include breakpoint ($small) {
-            margin-top: 65px;
-            @include row;
-          }
-        
+            margin-top: 45px;
+            @include row;            
+          }        
           &_h1 {
             @include breakpoint ($small) {
-              font-size: 1.6em;
+              font-size: 1.1em;
               margin-left: 15px;              
             }
           }
         }
-        
-        .header_navbar a {
-           text-decoration: none;
-           color: white;
-           display: none;        
-          @include breakpoint ($small) {
-            display: inline;        
-          }
-        }
-        
-        .header_navbar {
+        &_navbar{
           @include breakpoint ($small) {
             display: flex;
             justify-content: space-evenly;
+            padding-top: 4%;
+          }
+        a {
+           text-decoration: none;
+           display: none;
+           
+          @include breakpoint ($small) {
+            display: inline;   
+            font-size: 0.6em; 
+            color: white;             
+           transition: color 0.5s ease;             
           }
         }
+        a:hover {
+          @include breakpoint ($small) {
+          color: rgb(138, 207,229);
+          }
+        }       
+      }
+   }

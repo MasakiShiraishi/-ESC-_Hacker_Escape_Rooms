@@ -27,13 +27,11 @@
               width: 150vw;
               height: 350px;
               max-height: 100%;
-            }
-        
+            }        
             @include breakpoint ($large) {
               width: 140vw;
               height: 400px;
-            }
-        
+            }        
             @include breakpoint  ($extra-large) {
               width: 83vw;
               height: 480px;
@@ -61,8 +59,7 @@
             @include breakpoint  ($medium) {
               font-size: 0.9em;      
             }
-          }
-        
+          }        
           &_button_see_all_challenges {
             background-color: rgb(227, 23, 10);
             color: white;

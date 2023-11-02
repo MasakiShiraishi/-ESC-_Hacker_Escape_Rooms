@@ -1,40 +1,37 @@
 /* This is sectionOne */
-.sectionOne_img {
-          width: 100%;
-        
+.sectionOne{
+      &_img {
+          width: 100%;  
+
           @include breakpoint ($small) {
             max-height: 80vh;
             object-fit: cover;
           }
         }
-        .sectionOne_section{
+        &_div1{
           @include breakpoint ($small){
             margin-top:-70px
-          }
-        }
-        
-        .sectionOne_div1 {
-          @include column;
-        
+          }       
+        &_div {
+          @include column;    
+
           @include breakpoint ($small){
             flex-direction: row-reverse;
             justify-content: center;
-          }
-        
-        }
-        
-        .button_on_site_challenges {
+          }      
+       
+        &_button_on_site_challenges {
           background-color: rgb(138, 207, 229);
           margin: 30px 60px;
           padding: 20px 20px;
           border-radius: 10px;
           box-shadow: 1px 4px rgb(1, 24, 39);
-          font-size: 0.9em;
-        
-          @include breakpoint ($small){}
-        }
-        
-        .sectionOne_div1_link {
+          font-size: 0.9em;        
+          @include breakpoint ($small){
+
+          }
+        }        
+        &_link {
           text-align: center;
           margin: 15px;
           color: rgb(54, 118, 157);
@@ -50,9 +47,10 @@
             border-radius: 10px;
             font-size: 0.9em;
           }
-        }
-        
-        .sectionOne_div2 {
+        } 
+      }
+      }
+        &_div2 {
            margin: 20px 0 50px 10px;
            @include breakpoint ($small) {
             @include row;
@@ -60,20 +58,24 @@
           }
         }
         
-        .sectionOne_div3_1 {
-          @include row;
-        
+        &_div3{
+        &_part1 {
+          @include row;        
           @include breakpoint ($small) {}
         }
-        .sectionOne_div3_2{
+        &_part2{
           display:none;
           @include breakpoint ($small) {
              display:block;
              @include row;
           }
-        }       
+        }      
+        &_div {
+          @include column;
+          margin-bottom: auto;          
+          padding: 0 20px 15px 20px; 
         
-        .sectionOne_div3_div_visiter_comment {
+        &_visiter_comment {
           font-family: Italic;
           padding-right: 15px;
           font-size: 0.8em;
@@ -84,17 +86,14 @@
          }       
         }
         
-        .sectionOne_div3_div_visiter_profil {        
+        &_visiter_profil {        
           font-size: 0.7em;         
           margin-bottom: 0;
           @include breakpoint ($small) {
             font-size: 0.6em;             
          }        
         }
+      }
         
-        .sectionOne_div3_div {
-          @include column;
-          margin-bottom: auto;          
-          padding: 0 20px 15px 20px; 
-        }
-        
+      }
+    }
