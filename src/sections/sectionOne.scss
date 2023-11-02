@@ -21,32 +21,10 @@
           }      
        
         &_button_on_site_challenges {
-          background-color: rgb(138, 207, 229);
-          margin: 30px 60px;
-          padding: 20px 20px;
-          border-radius: 10px;
-          box-shadow: 1px 4px rgb(1, 24, 39);
-          font-size: 0.9em;        
-          @include breakpoint ($small){
-
-          }
+          @include sectionOne_two_button;
         }        
         &_link {
-          text-align: center;
-          margin: 15px;
-          color: rgb(54, 118, 157);
-          font-weight: bold;
-          font-size: 0.7em;
-        
-          @include breakpoint ($small) {
-            color: white;
-            background-color: red;
-            text-decoration: none;
-            margin: 30px 60px;
-            padding: 22px 30px;
-            border-radius: 10px;
-            font-size: 0.9em;
-          }
+         @include sectionOne_two_link;
         } 
       }
       }

@@ -3,6 +3,7 @@
             @include breakpoint ($small) {
               display: flex;
               flex-direction: row-reverse;
+              padding-bottom: 130px;
             }
           }        
           &_div2 {
