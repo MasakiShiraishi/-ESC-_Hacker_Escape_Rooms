@@ -16,17 +16,18 @@
 
 @mixin sectionOne_two_button{
           background-color: rgb(138, 207, 229);
-          margin: 30px 60px;
           padding: 20px 20px;
-          border-radius: 10px;
-          box-shadow: 1px 4px rgb(1, 24, 39);
-          font-size: 0.9em;        
+          border-radius: 5px;
+          box-shadow: 0.5px 0.5px rgb(1, 24, 39);
+          font-size: 0.8em;        
           @include breakpoint ($small){
-
+            padding: 10px 10px;           
+            width: 22%;
+            border-style:none;
           }
         }
 
-@mixin sectionOne_two_link{
+@mixin sectionOne_two_div4_link{
   text-align: center;
   margin: 15px;
   color: rgb(54, 118, 157);
@@ -35,11 +36,13 @@
   @include breakpoint ($small) {
     color: white;
     background-color: red;
-    text-decoration: none;
-    margin: 30px 60px;
-    padding: 22px 30px;
-    border-radius: 10px;
-    font-size: 0.9em;
+    text-decoration: none; 
+    margin:0 15px 0 0;  
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.8em;
+     width: 20%;
+    
   }
 }
     

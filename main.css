@@ -13,33 +13,34 @@
 }
 .header_div1 {
   display: flex;
+  align-items: flex-end;
 }
 .header_img {
-  margin: 20px;
+  padding: 20px;
 }
 @media screen and (min-width: 480px) {
   .header_img {
     margin: 10px 10px 20px 20px;
-    width: 100px;
-    height: 62px;
+    width: 128px;
+    height: 82px;
   }
 }
 .header_div2 {
   color: white;
   margin-left: -10px;
-  margin-top: 18px;
+  margin-bottom: 18px;
   font-size: 1em;
 }
 @media screen and (min-width: 480px) {
   .header_div2 {
-    margin-top: 45px;
+    margin-bottom: 35px;
     display: flex;
     flex-direction: row;
   }
 }
 @media screen and (min-width: 480px) {
   .header_div2_h1 {
-    font-size: 1.1em;
+    font-size: 1.4em;
     margin-left: 15px;
   }
 }
@@ -47,7 +48,7 @@
   .header_navbar {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 4%;
+    padding-top: 2%;
   }
 }
 .header_navbar a {
@@ -57,7 +58,7 @@
 @media screen and (min-width: 480px) {
   .header_navbar a {
     display: inline;
-    font-size: 0.6em;
+    font-size: 0.8em;
     color: white;
     transition: color 0.5s ease;
   }
@@ -74,32 +75,40 @@
 }
 @media screen and (min-width: 480px) {
   .sectionOne_img {
-    max-height: 80vh;
+    max-height: 60vh;
     object-fit: cover;
   }
 }
 @media screen and (min-width: 480px) {
   .sectionOne_div1 {
-    margin-top: -70px;
+    margin: -60px 0 50px 0;
   }
 }
 .sectionOne_div1_div {
   display: flex;
   flex-direction: column;
+  margin: 30px 60px;
 }
 @media screen and (min-width: 480px) {
   .sectionOne_div1_div {
     flex-direction: row-reverse;
     justify-content: center;
+    align-items: center;
   }
 }
 .sectionOne_div1_div_button_on_site_challenges {
   background-color: rgb(138, 207, 229);
-  margin: 30px 60px;
   padding: 20px 20px;
-  border-radius: 10px;
-  box-shadow: 1px 4px rgb(1, 24, 39);
-  font-size: 0.9em;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px rgb(1, 24, 39);
+  font-size: 0.8em;
+}
+@media screen and (min-width: 480px) {
+  .sectionOne_div1_div_button_on_site_challenges {
+    padding: 10px 10px;
+    width: 22%;
+    border-style: none;
+  }
 }
 .sectionOne_div1_div_link {
   text-align: center;
@@ -113,10 +122,11 @@
     color: white;
     background-color: red;
     text-decoration: none;
-    margin: 30px 60px;
-    padding: 22px 30px;
-    border-radius: 10px;
-    font-size: 0.9em;
+    margin: 0 15px 0 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    width: 20%;
   }
 }
 .sectionOne_div2 {
@@ -126,12 +136,17 @@
   .sectionOne_div2 {
     display: flex;
     flex-direction: row;
-    margin: 0 8% 50px 8%;
+    margin: 5% 8% 50px 8%;
   }
 }
 .sectionOne_div3_part1 {
   display: flex;
   flex-direction: row;
+}
+@media screen and (min-width: 480px) {
+  .sectionOne_div3_part1 {
+    padding-left: 15%;
+  }
 }
 .sectionOne_div3_part2 {
   display: none;
@@ -141,6 +156,7 @@
     display: block;
     display: flex;
     flex-direction: row;
+    padding-right: 10%;
   }
 }
 .sectionOne_div3_div {
@@ -156,7 +172,7 @@
 }
 @media screen and (min-width: 480px) {
   .sectionOne_div3_div_visiter_comment {
-    font-size: 0.7em;
+    font-size: 0.85em;
     width: 90%;
     padding-bottom: 15px;
   }
@@ -168,12 +184,13 @@
 @media screen and (min-width: 480px) {
   .sectionOne_div3_div_visiter_profil {
     font-size: 0.6em;
+    padding-right: 40%;
   }
 }
 
 .sectionTwo_title_popularChallenges {
   font-size: 1.3em;
-  padding: 10px;
+  padding: 10px 0 50px 0;
   text-align: center;
 }
 .sectionTwo_slider {
@@ -185,27 +202,35 @@
 @media screen and (min-width: 480px) {
   .sectionTwo_slider {
     display: flex;
-    margin-top: 30px;
+    margin: 30px 20px 50px 30px;
+    padding-bottom: 20px;
     overflow-x: hidden;
-    gap: 0;
     justify-content: center;
   }
 }
 .sectionTwo_hacker_img {
+  max-width: 100%;
   width: 100%;
+  border-radius: 7px;
+}
+@media screen and (min-width: 480px) {
+  .sectionTwo_hacker_img {
+    height: 25vh;
+  }
 }
 .sectionTwo_div1 {
   min-width: 300px;
-  border: 2px ridge;
-  border-radius: 7px;
-  width: 400px;
+  border: 0.5px rgb(143, 132, 132);
+  width: 300px;
   margin: 20px;
-  box-shadow: 1px 2px rgb(1, 24, 39);
+  border-radius: 7px;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(169, 179, 186);
 }
 @media screen and (min-width: 480px) {
   .sectionTwo_div1 {
-    min-width: 250px;
-    margin: 10px;
+    min-width: none;
+    margin: 0 25px;
+    height: auto;
   }
 }
 .sectionTwo_title_room {
@@ -258,10 +283,12 @@
   padding: 10px 25px;
   border-radius: 5px;
   margin: 0 10px 15px 120px;
+  border-style: none;
 }
 @media screen and (min-width: 480px) {
   .sectionTwo_div3_button_book_this_room {
     font-size: 0.5em;
+    padding-right: 30px;
   }
 }
 .sectionTwo_div4 {
@@ -276,11 +303,17 @@
 }
 .sectionTwo_div4_button_on_site_challenges {
   background-color: rgb(138, 207, 229);
-  margin: 30px 60px;
   padding: 20px 20px;
-  border-radius: 10px;
-  box-shadow: 1px 4px rgb(1, 24, 39);
-  font-size: 0.9em;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px rgb(1, 24, 39);
+  font-size: 0.8em;
+}
+@media screen and (min-width: 480px) {
+  .sectionTwo_div4_button_on_site_challenges {
+    padding: 10px 10px;
+    width: 22%;
+    border-style: none;
+  }
 }
 .sectionTwo_div4_link {
   text-align: center;
@@ -294,10 +327,11 @@
     color: white;
     background-color: red;
     text-decoration: none;
-    margin: 30px 60px;
-    padding: 22px 30px;
-    border-radius: 10px;
-    font-size: 0.9em;
+    margin: 0 15px 0 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    width: 20%;
   }
 }
 

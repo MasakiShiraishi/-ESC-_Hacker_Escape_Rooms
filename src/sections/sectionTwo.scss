@@ -1,8 +1,9 @@
 .sectionTwo{
   &_title_popularChallenges {
           font-size: 1.3em;
-          padding: 10px;
+          padding: 10px 0 50px 0;
           text-align: center;
+          
         }
         
         &_slider {
@@ -12,28 +13,36 @@
           margin: 0;
           @include breakpoint ($small) {
             display: flex;
-            margin-top: 30px;
-            overflow-x: hidden;  
-            gap: 0;
-            justify-content: center;             
-         }
+            margin: 30px 20px 50px 30px; 
+            padding-bottom: 20px;
+            overflow-x:hidden ;                     
+            justify-content: center;       
+          }
         }
         
         &_hacker_img {
+          max-width: 100%;
           width: 100%;
+          border-radius: 7px;
+          @include breakpoint ($small) {
+           height:25vh;          
+         }          
         }
         
         &_div1 {
           min-width: 300px;
-          border: 2px ridge;
-          border-radius: 7px;
-          width: 400px;
+          border: 0.5px rgb(143, 132, 132);
+          width: 300px;
           margin: 20px;
-          box-shadow: 1px 2px rgb(1, 24, 39);
-          @include breakpoint ($small) {
-            min-width:250px;
-            margin:10px;
-         }
+          border-radius: 7px;
+          box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(169, 179, 186);
+          @include breakpoint ($small) { 
+            min-width: none;           
+            margin: 0 25px; 
+            //max-width:80%;
+            height:auto;   
+             
+           }
         }
         
         &_title_room {
@@ -82,8 +91,10 @@
             padding: 10px 25px;
             border-radius: 5px;
             margin: 0 10px 15px 120px;
+            border-style: none;
             @include breakpoint ($small) {
-              font-size: 0.5em;
+              font-size: 0.5em;            
+              padding-right:30px;
            }
           }
         }
@@ -98,7 +109,7 @@
              @include sectionOne_two_button;
         }           
         &_link {
-             @include sectionOne_two_link;
+             @include sectionOne_two_div4_link;
         }
       }
     }

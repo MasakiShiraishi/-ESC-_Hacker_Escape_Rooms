@@ -4,27 +4,28 @@
           width: 100%;  
 
           @include breakpoint ($small) {
-            max-height: 80vh;
+            max-height: 60vh;
             object-fit: cover;
           }
         }
         &_div1{
           @include breakpoint ($small){
-            margin-top:-70px
+            margin:-60px 0 50px 0;
           }       
         &_div {
           @include column;    
-
+          margin: 30px 60px;
           @include breakpoint ($small){
             flex-direction: row-reverse;
             justify-content: center;
+            align-items: center;            
           }      
        
         &_button_on_site_challenges {
           @include sectionOne_two_button;
         }        
         &_link {
-         @include sectionOne_two_link;
+         @include sectionOne_two_div4_link;
         } 
       }
       }
@@ -32,20 +33,23 @@
            margin: 20px 0 50px 10px;
            @include breakpoint ($small) {
             @include row;
-            margin: 0 8% 50px 8%;
+            margin: 5% 8% 50px 8%;
           }
         }
         
         &_div3{
         &_part1 {
           @include row;        
-          @include breakpoint ($small) {}
+          @include breakpoint ($small) {
+            padding-left: 15%;
+          }
         }
         &_part2{
           display:none;
           @include breakpoint ($small) {
              display:block;
              @include row;
+             padding-right: 10%;
           }
         }      
         &_div {
@@ -58,7 +62,7 @@
           padding-right: 15px;
           font-size: 0.8em;
           @include breakpoint ($small){
-            font-size: 0.7em;
+            font-size: 0.85em;
             width:90%;
             padding-bottom:15px;
          }       
@@ -68,7 +72,8 @@
           font-size: 0.7em;         
           margin-bottom: 0;
           @include breakpoint ($small) {
-            font-size: 0.6em;             
+            font-size: 0.6em;   
+            padding-right: 40%;          
          }        
         }
       }
