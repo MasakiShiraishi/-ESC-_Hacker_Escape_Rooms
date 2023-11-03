@@ -692,13 +692,14 @@
     padding: 50px 0 70px 0;
   }
 }
+.footer_div {
+  padding: 0 0 25px 30px;
+}
 @media screen and (min-width: 480px) {
   .footer_div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: -3%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    padding: 3% 0 0 10%;
   }
 }
 .footer_div_esc_hacker {
@@ -713,7 +714,7 @@
 }
 @media screen and (min-width: 480px) {
   .footer_div_div1 {
-    padding-left: 200px;
+    padding-left: 120px;
   }
 }
 .footer_div_div1_site_map {
@@ -722,17 +723,22 @@
   font-size: 0.8em;
   font-weight: blod;
 }
+@media screen and (min-width: 480px) {
+  .footer_div_div1_site_map {
+    padding: 5px 10px 5px 0;
+  }
+}
 .footer_div_div2 {
   padding-top: 15px;
 }
 @media screen and (min-width: 480px) {
   .footer_div_div2 {
-    padding: 0 0 0 200px;
+    padding: 20px 0 0 120px;
   }
 }
 @media screen and (min-width: 480px) {
   .footer_div_div3 {
-    padding: 0 150px 0 0;
+    padding: 0 0 0 20px;
     margin-top: -25px;
   }
 }

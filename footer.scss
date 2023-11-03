@@ -3,29 +3,35 @@
           margin-top: 30px;
           padding: 40px 0 50px 0;
           @include breakpoint ($small) {
-            padding: 50px 0 70px 0;            
+            padding: 50px 0 70px 0;
+            
            }
         
           &_div {
-            padding: 0 0 25px 30px;
             @include breakpoint ($small) {
-              display: grid;              
-              grid-template-columns: 1.5fr 1fr 1fr;
-              padding: 3% 0 0 10%;          
+             @include row;
+              align-items: center;
+              justify-content: space-around;
+              margin-left:-3%;
             }
             &_esc_hacker {
               color: white;
               font-size: 0.8em;
-              font-weight: blod;              
-            }          
+              font-weight: blod;
+              @include breakpoint ($small) {
+               
+                
+              }
+            }
+          
             &_quodsi {
               color: white;
               font-size: 0.6em;
               padding-top: 10px;
             }         
-            &_div1{              
+            &_div1{
               @include breakpoint ($small) {
-                padding-left: 120px;
+                padding-left: 200px;
               }
               &_site_map {
             color: white;
@@ -33,19 +39,19 @@
             font-size: 0.8em;
             font-weight: blod;
             @include breakpoint ($small) {
-              padding: 5px 10px 5px 0;
+              
             } 
           }
             }
             &_div2 {
               padding-top: 15px;
               @include breakpoint ($small) {
-                padding: 20px 0 0 120px;
+                padding: 0 0 0 200px;
               }
             }    
             &_div3{
               @include breakpoint ($small) {
-                padding: 0 0 0 20px;
+                padding: 0 150px 0 0;
                 margin-top:-25px;
               }
               &_follow {
