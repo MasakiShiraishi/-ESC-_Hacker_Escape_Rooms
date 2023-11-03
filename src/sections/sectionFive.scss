@@ -35,80 +35,18 @@
           }
         }
           &_img {
-            object-fit: cover;
-            width: 100vw;
-            max-width: 100%;
-            @include breakpoint ($small) {  
-              min-height: 270px;
-              min-width:260px;
-            }        
-            @include breakpoint  ($medium) {
-              min-height: 300px;
-              height:auto;               
-            }        
-            @include breakpoint  ($large) {
-              min-height: 350px;
-            }        
+           @include sectionFour_Five_img;     
           }
         
           &_play_online {
-            font-weight: bold;
-            font-size: 1.2em;
-            margin: 10px 7px 10px 20px;
-            @include breakpoint ($small){              
-              font-size: 0.8em;
-              }
-            @include breakpoint  ($medium) {
-                font-size: 1.0em;
-                }  
-           @include breakpoint  ($large) {                  
-                  font-size: 1.3em;
-                }      
-          @include breakpoint  ($extra-large) { 
-                  width:33vw;            
-                }
+            @include sectionFour_Five_play;
           }
         
           &_praeterea {
-            margin: 10px 7px 10px 20px;
-            font-size: 0.9em;
-            @include breakpoint ($small) {             
-              font-size: 0.7em;
-              }
-              @include breakpoint  ($medium) {
-                font-size: 0.75em;
-                }
-              @include breakpoint  ($large) {
-                  font-size: 0.9em;                  
-                } 
-              @include breakpoint  ($extra-large) {  
-                  width: 30vw;           
-                }
+            @include sectionFour_Five_praeterea;
           }    
           &_button_see_all_challenges {
-            background-color: rgb(227, 23, 10);
-            color: white;
-            margin: 20px 170px 30px 20px;
-            padding: 10px 25px;
-            border-radius: 5px;
-            font-size: 0.9em;
-            @include breakpoint ($small){             
-              padding: 5px 17px;
-              font-size: 0.5em;      
-            }
-            @include breakpoint ($medium) { 
-              width: 20vw;            
-              font-size: 0.75em;
-              }       
-            @include breakpoint  ($large) {
-              width: 25vw;
-             
-                font-size: 0.9em;
-              }  
-            @include breakpoint  ($extra-large) {  
-               width: 23vw;              
-                height: 7vh;           
-              }
+           @include sectionFour_Five_button;
           }
         }
         

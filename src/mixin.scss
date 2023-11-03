@@ -1,48 +1,140 @@
-@mixin breakpoint($min-size){
-          @media screen and (min-width: $min-size){
-            @content;
-          }
-        }
+@mixin breakpoint($min-size) {
+  @media screen and (min-width: $min-size) {
+    @content;
+  }
+}
+
 @mixin row {
-          display: flex;
-          flex-direction: row;
-        }
+  display: flex;
+  flex-direction: row;
+}
 
-    
 @mixin column {
-          display: flex;
-          flex-direction: column;
-        }
+  display: flex;
+  flex-direction: column;
+}
 
-@mixin sectionOne_two_button{
-          background-color: rgb(138, 207, 229);
-          padding: 20px 20px;
-          border-radius: 5px;
-          box-shadow: 0.5px 0.5px rgb(1, 24, 39);
-          font-size: 0.8em;        
-          @include breakpoint ($small){
-            padding: 10px 10px;           
-            width: 22%;
-            border-style:none;
-          }
-        }
+@mixin sectionOne_two_button {
+  background-color: rgb(138, 207, 229);
+  padding: 20px 20px;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px rgb(1, 24, 39);
+  font-size: 0.8em;
 
-@mixin sectionOne_two_div4_link{
+  @include breakpoint ($small) {
+    padding: 10px 10px;
+    width: 22%;
+    border-style: none;
+  }
+}
+
+@mixin sectionOne_two_div4_link {
   text-align: center;
   margin: 20px 15px;
   color: rgb(54, 118, 157);
   font-weight: bold;
   font-size: 0.7em;
+
   @include breakpoint ($small) {
     color: white;
     background-color: red;
-    text-decoration: none; 
-    margin:0 15px 0 0;  
+    text-decoration: none;
+    margin: 0 15px 0 0;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 0.8em;
-     width: 20%;
-    
+    width: 20%;
   }
 }
-    
+
+// This is for sectionFour and sectionFive
+
+@mixin sectionFour_Five_img {
+  object-fit: cover;
+  width: 100vw;
+  max-width: 100%;
+
+  @include breakpoint ($small) {
+    min-height: 270px;
+    min-width: 260px;
+  }
+
+  @include breakpoint ($medium) {
+    min-height: 300px;
+    height: auto;
+  }
+
+  @include breakpoint ($large) {
+    min-height: 370px;
+  }
+}
+
+@mixin sectionFour_Five_play {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 10px 7px 10px 20px;
+
+  @include breakpoint ($small) {
+    font-size: 0.8em;
+  }
+
+  @include breakpoint ($medium) {
+    font-size: 1.0em;
+  }
+
+  @include breakpoint ($large) {
+    font-size: 1.3em;
+  }
+
+  @include breakpoint ($extra-large) {
+    width: 33vw;
+  }
+}
+
+@mixin sectionFour_Five_praeterea {
+  margin: 10px 7px 10px 20px;
+  font-size: 0.9em;
+
+  @include breakpoint ($small) {
+    font-size: 0.7em;
+  }
+
+  @include breakpoint ($medium) {
+    font-size: 0.75em;
+  }
+
+  @include breakpoint ($large) {
+    font-size: 0.9em;
+  }
+
+  @include breakpoint ($extra-large) {
+    width: 30vw;
+  }
+}
+
+@mixin sectionFour_Five_button {
+  background-color: rgb(227, 23, 10);
+  color: white;
+  margin: 20px 170px 30px 20px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 0.9em;
+
+  @include breakpoint ($small) {
+    padding: 5px 17px;
+    font-size: 0.5em;
+  }
+  @include breakpoint ($medium) {
+    width: 20vw;
+    font-size: 0.75em;
+  }
+  @include breakpoint ($large) {
+    width: 25vw;
+    font-size: 0.9em;
+  }
+  @include breakpoint ($extra-large) {
+    width: 23vw;
+    height: 7vh;
+  }
+
+}
