@@ -1,79 +1,114 @@
 .sectionFive {
-          &_div {
-            @include breakpoint ($small) {
-              display: flex;
-              flex-direction: row-reverse;
-              padding-bottom: 130px;
-            }
-          }        
-          &_div2 {
-           @include column;
-            align-items: flex-start;
+          &_div {               
+            @include breakpoint ($small) {              
+              display: grid;             
+              grid-template-columns: 1fr 1fr;              
+              padding-bottom: 130px;              
+            }            
+          &_div1{                           
+            @include breakpoint ($small) {              
+             grid-area: 1/2/2/3;
+            }   
+          }      
+          &_div2 {        
+            @include column;
+            align-items:baseline;
             justify-content: center;
             padding: 0 20px auto 20px;        
-            @include breakpoint ($small) {
-              margin: 5px 25px 0 25px;
+            @include breakpoint ($small) {            
+              margin: 0 2% 0 2%;
+              grid-area: 1/1/2/2;  
+              min-height: 220px;
+              height:auto;              
             }
+            @include breakpoint  ($medium) {
+              min-height: 250px;
+              margin:0 6%;
+            }        
+            @include breakpoint  ($large) {
+              margin:0 15%;
+              min-height: 270px;
+            } 
+            @include breakpoint  ($extra-large) {
+              margin:0 18% 0 18%;
+            } 
           }
-        
+        }
           &_img {
             object-fit: cover;
             width: 100vw;
             max-width: 100%;
-            @include breakpoint ($small) {
-              width: 170vw;   
-              height: 250px;     
+            @include breakpoint ($small) {  
+              min-height: 270px;
+              min-width:260px;
             }        
-            @include breakpoint ($medium) {
-              width: 150vw;
-              height: 350px;
-              max-height: 100%;
+            @include breakpoint  ($medium) {
+              min-height: 300px;
+              height:auto;               
             }        
-            @include breakpoint ($large) {
-              width: 140vw;
-              height: 400px;
+            @include breakpoint  ($large) {
+              min-height: 350px;
             }        
-            @include breakpoint  ($extra-large) {
-              width: 83vw;
-              height: 480px;
-            }
           }
         
           &_play_online {
             font-weight: bold;
             font-size: 1.2em;
-            margin: 10px 12px;
-            @include breakpoint ($small) {
-              font-size: 0.9em;      
-            }
+            margin: 10px 7px 10px 20px;
+            @include breakpoint ($small){              
+              font-size: 0.8em;
+              }
             @include breakpoint  ($medium) {
-              font-size: 1.2em;      
-            }
+                font-size: 1.0em;
+                }  
+           @include breakpoint  ($large) {                  
+                  font-size: 1.3em;
+                }      
+          @include breakpoint  ($extra-large) { 
+                  width:33vw;            
+                }
           }
         
           &_praeterea {
-            margin: 10px 12px;
+            margin: 10px 7px 10px 20px;
             font-size: 0.9em;
-            @include breakpoint ($small) {
-              font-size: 0.7em;      
-            }
-            @include breakpoint  ($medium) {
-              font-size: 0.9em;      
-            }
-          }        
+            @include breakpoint ($small) {             
+              font-size: 0.7em;
+              }
+              @include breakpoint  ($medium) {
+                font-size: 0.75em;
+                }
+              @include breakpoint  ($large) {
+                  font-size: 0.9em;                  
+                } 
+              @include breakpoint  ($extra-large) {  
+                  width: 30vw;           
+                }
+          }    
           &_button_see_all_challenges {
             background-color: rgb(227, 23, 10);
             color: white;
-            margin: 30px 25px;
+            margin: 20px 170px 30px 20px;
             padding: 10px 25px;
             border-radius: 5px;
             font-size: 0.9em;
-            @include breakpoint ($small) {
+            @include breakpoint ($small){             
+              padding: 5px 17px;
               font-size: 0.5em;      
             }
-            @include breakpoint ($medium) {
-              font-size:  0.9em;    
-            }
+            @include breakpoint ($medium) { 
+              width: 20vw;            
+              font-size: 0.75em;
+              }       
+            @include breakpoint  ($large) {
+              width: 25vw;
+             
+                font-size: 0.9em;
+              }  
+            @include breakpoint  ($extra-large) {  
+               width: 23vw;              
+                height: 7vh;           
+              }
           }
         }
         
