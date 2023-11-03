@@ -71,7 +71,7 @@
 
 @mixin sectionFour_Five_play {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   margin: 10px 7px 10px 20px;
 
   @include breakpoint ($small) {
@@ -93,7 +93,7 @@
 
 @mixin sectionFour_Five_praeterea {
   margin: 10px 7px 10px 20px;
-  font-size: 0.9em;
+  font-size: 0.75em;
 
   @include breakpoint ($small) {
     font-size: 0.7em;
@@ -115,17 +115,15 @@
 @mixin sectionFour_Five_button {
   background-color: rgb(227, 23, 10);
   color: white;
-  margin: 20px 170px 30px 20px;
-  padding: 10px 25px;
+  margin: 20px 80px 30px 20px;
+  padding: 10px 30px;
+  border-style: none;
   border-radius: 5px;
   font-size: 0.9em;
-
-  @include breakpoint ($small) {
-    padding: 5px 17px;
-    font-size: 0.5em;
+  @include breakpoint ($small) {  
+    font-size: 0.65em;
   }
-  @include breakpoint ($medium) {
-    width: 20vw;
+  @include breakpoint ($medium) {   
     font-size: 0.75em;
   }
   @include breakpoint ($large) {
