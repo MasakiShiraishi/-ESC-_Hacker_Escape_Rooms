@@ -100,7 +100,7 @@
         }
         &_div4 {
              @include column;
-        
+             margin: 30px 60px 70px 60px;
              @include breakpoint ($small){
                 flex-direction: row-reverse;
                  justify-content: center;

@@ -7,19 +7,24 @@
           @include breakpoint ($small) {
             padding-top: 100px;
             min-height: 30vh;   
-            padding: 80px 120px;      
+              
           } 
          
           &_text {
             text-align: center;
-            color: white;
-            font-size: 1.1em;
-        
+            color: white;        
             @include breakpoint ($small) {
+              margin:0 13% 0 13%;
               overflow-wrap: break-word;
-              font-size: 0.95em;
+              font-size: 1.05em;
               padding-bottom: 15px;
             }      
+            @include breakpoint ($large) {
+              margin:0 30% 0 30%; 
+              letter-spacing: 1px;             
+              font-size: 1.1em;
+              padding-bottom: 15px;
+            }   
            }          
           &_div {
             display: flex;

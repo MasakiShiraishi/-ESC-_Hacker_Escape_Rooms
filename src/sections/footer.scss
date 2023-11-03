@@ -1,20 +1,26 @@
 .footer {
           background-color: rgb(1, 24, 39);
           margin-top: 30px;
-          padding: 40px 20px 50px 30px;
+          padding: 40px 0 50px 0;
+          @include breakpoint ($small) {
+            padding: 50px 0 70px 0;
+            
+           }
         
           &_div {
             @include breakpoint ($small) {
              @include row;
               align-items: center;
-              justify-content: space-evenly;
+              justify-content: space-around;
+              margin-left:-3%;
             }
             &_esc_hacker {
               color: white;
               font-size: 0.8em;
               font-weight: blod;
               @include breakpoint ($small) {
-                padding-top: 40px;
+               
+                
               }
             }
           
@@ -25,7 +31,7 @@
             }         
             &_div1{
               @include breakpoint ($small) {
-                padding-left: 20px;
+                padding-left: 200px;
               }
               &_site_map {
             color: white;
@@ -33,22 +39,29 @@
             font-size: 0.8em;
             font-weight: blod;
             @include breakpoint ($small) {
-              padding-top: 60px;
+              
             } 
           }
             }
             &_div2 {
               padding-top: 15px;
               @include breakpoint ($small) {
-                padding: 0 0 0 20px;
+                padding: 0 0 0 200px;
               }
-            }           
-            &_div3_follow {
+            }    
+            &_div3{
+              @include breakpoint ($small) {
+                padding: 0 150px 0 0;
+                margin-top:-25px;
+              }
+              &_follow {
             color: white;
             padding: 30px 0 5px 0;
             font-size: 0.8em;
             font-weight: blod;
+
           }  
+        } 
           &_div1 a,
           &_div2 a, 
           &_div3 a{
@@ -59,5 +72,6 @@
             padding: 0;
             margin: 0;
           }  
-        }  
-      } 
+        
+          }
+        }

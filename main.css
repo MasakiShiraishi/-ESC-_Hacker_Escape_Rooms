@@ -112,7 +112,7 @@
 }
 .sectionOne_div1_div_link {
   text-align: center;
-  margin: 15px;
+  margin: 20px 15px;
   color: rgb(54, 118, 157);
   font-weight: bold;
   font-size: 0.7em;
@@ -294,6 +294,7 @@
 .sectionTwo_div4 {
   display: flex;
   flex-direction: column;
+  margin: 30px 60px 70px 60px;
 }
 @media screen and (min-width: 480px) {
   .sectionTwo_div4 {
@@ -317,7 +318,7 @@
 }
 .sectionTwo_div4_link {
   text-align: center;
-  margin: 15px;
+  margin: 20px 15px;
   color: rgb(54, 118, 157);
   font-weight: bold;
   font-size: 0.7em;
@@ -345,18 +346,25 @@
   .sectionThree {
     padding-top: 100px;
     min-height: 30vh;
-    padding: 80px 120px;
   }
 }
 .sectionThree_text {
   text-align: center;
   color: white;
-  font-size: 1.1em;
 }
 @media screen and (min-width: 480px) {
   .sectionThree_text {
+    margin: 0 13% 0 13%;
     overflow-wrap: break-word;
-    font-size: 0.95em;
+    font-size: 1.05em;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .sectionThree_text {
+    margin: 0 30% 0 30%;
+    letter-spacing: 1px;
+    font-size: 1.1em;
     padding-bottom: 15px;
   }
 }
@@ -575,25 +583,26 @@
 .footer {
   background-color: rgb(1, 24, 39);
   margin-top: 30px;
-  padding: 40px 20px 50px 30px;
+  padding: 40px 0 50px 0;
+}
+@media screen and (min-width: 480px) {
+  .footer {
+    padding: 50px 0 70px 0;
+  }
 }
 @media screen and (min-width: 480px) {
   .footer_div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin-left: -3%;
   }
 }
 .footer_div_esc_hacker {
   color: white;
   font-size: 0.8em;
   font-weight: blod;
-}
-@media screen and (min-width: 480px) {
-  .footer_div_esc_hacker {
-    padding-top: 40px;
-  }
 }
 .footer_div_quodsi {
   color: white;
@@ -602,7 +611,7 @@
 }
 @media screen and (min-width: 480px) {
   .footer_div_div1 {
-    padding-left: 20px;
+    padding-left: 200px;
   }
 }
 .footer_div_div1_site_map {
@@ -611,17 +620,18 @@
   font-size: 0.8em;
   font-weight: blod;
 }
-@media screen and (min-width: 480px) {
-  .footer_div_div1_site_map {
-    padding-top: 60px;
-  }
-}
 .footer_div_div2 {
   padding-top: 15px;
 }
 @media screen and (min-width: 480px) {
   .footer_div_div2 {
-    padding: 0 0 0 20px;
+    padding: 0 0 0 200px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer_div_div3 {
+    padding: 0 150px 0 0;
+    margin-top: -25px;
   }
 }
 .footer_div_div3_follow {
