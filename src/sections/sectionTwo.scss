@@ -12,13 +12,11 @@
           display: flex;
           gap: 20px;
           overflow-x: scroll;
-
           margin: 0;
-          @include breakpoint ($small) {
-            display: flex;
+          @include breakpoint ($small) {            
             margin: 30px 20px 50px 30px; 
             padding-bottom: 20px;
-            overflow-x:hidden ;                     
+            //overflow-x:hidden ;                     
             justify-content: center;       
           }
         }
@@ -40,10 +38,10 @@
           border-radius: 7px;
           box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(169, 179, 186);
           @include breakpoint ($small) { 
-            min-width: none;           
-            margin: 0 25px; 
-            //max-width:80%;
-            height:auto;   
+            margin: 0 3%; 
+             
+              width:20%;
+              height:60%;   
              
            }
         }
