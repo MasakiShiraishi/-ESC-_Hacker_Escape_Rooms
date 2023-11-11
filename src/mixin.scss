@@ -19,7 +19,7 @@
   border-radius: 5px;
   box-shadow: 0.5px 0.5px rgb(1, 24, 39);
   font-size: 0.8em;
-
+ 
   @include breakpoint ($small) {
     padding: 10px 10px;
     min-width: 25%;
