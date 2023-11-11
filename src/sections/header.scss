@@ -9,12 +9,9 @@
         &_div1 {
           display: flex;
           align-items:flex-end;
-          position: relative;
-         
-          
-        }       
-            
-        &_img {
+          position: relative;       
+        }     
+       &_img {
           padding: 20px;
           @include breakpoint ($small) {
             margin: 10px 10px 20px 20px;
