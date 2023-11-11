@@ -55,7 +55,9 @@
   max-width: 100%;
 
   @include breakpoint ($small) {
-    min-height: 270px;
+   
+    object-fit: cover;
+    min-height: 300px;
     min-width: 260px;
   }
 
@@ -127,7 +129,7 @@
   }
   @include breakpoint ($medium) {   
     font-size: 0.75em;
-    margin: 20px 80px 30px 20px;
+    margin: 20px 80px auto 20px;
   }
   @include breakpoint ($large) {
     width: 25vw;

@@ -7,6 +7,13 @@
   font-size: 24px;
   font-family: "Roboto";
 }
+body {
+  overflow: auto;    
+  transition: opacity 0.3s ease;  
+}
+body.active {
+  overflow: hidden;  
+}
 
 
 @import'sections/header';

@@ -2,11 +2,18 @@
           background-color: rgb(1, 24, 39);
           margin: auto;
           padding: 20px 5px;
-          font-weight: bold;        
+          font-weight: bold;   
+          &.active{
+            background-color: rgba(1, 24, 39, 0.2);            
+          }            
         &_div1 {
           display: flex;
           align-items:flex-end;
-        }        
+          position: relative;
+         
+          
+        }       
+            
         &_img {
           padding: 20px;
           @include breakpoint ($small) {
@@ -19,7 +26,8 @@
           color: white;
           margin-left: -10px;
           margin-bottom: 18px;
-          font-size: 1em;        
+          font-size: 1em;     
+         
           @include breakpoint ($small) {
             margin-bottom: 35px;
             @include row;            
@@ -31,12 +39,57 @@
             }
           }
         }
-        &_navbar{
+       
+        &_menu{
+          color:rgba(255, 255, 255, 1);
+          font-size: 60px;
+          display:flex;
+          position: absolute;
+          top: 13px;
+          right: 16px;
+        
+        @include breakpoint ($small) {
+          display: none;             
+        }
+       
+      }
+      &_close_menu{
+        color: white;
+        font-size: 70px;
+        position: absolute;
+        top: 8px;
+        right:20px;
+        @include breakpoint ($small) {
+          display: none;             
+        }
+      }
+       &_navbar{
+        display: none;
+        z-index: 2;
+        &.active{
+          display: flex; 
+          top: 0;      
+          margin: 25px 15px 50px 15px;
+          padding-bottom: 50px;
+          min-width: 93vw;
+          min-height: 85vh;
+          background-color: rgb(1, 24, 39);
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 50px;
+          position: absolute; 
+          .header_navbar_link{
+               display: block;
+               color: white;
+               font-size: 1.25em;
+          }
+        }
           @include breakpoint ($small) {
             display: flex;
             justify-content: space-evenly;
             padding-top: 2%;
-            
+                        
           }
         a {
            text-decoration: none;
@@ -56,3 +109,6 @@
         }       
       }
    }
+
+
+
