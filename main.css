@@ -132,9 +132,6 @@ body.active {
 }
 
 /* This is sectionOne */
-.sectionOne {
-  background-color: red;
-}
 .sectionOne_img {
   width: 100%;
 }
