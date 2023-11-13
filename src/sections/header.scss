@@ -65,11 +65,12 @@
         z-index: 2;
         &.active{
           display: flex; 
-          top: 0;      
-          margin: 20px 0 50px 10px;
-          padding-bottom: 70px;
+          top: 0;  
+          bottom:10;    
+          margin: 20px 0 10px 10px;
+          padding-bottom: 0;
           min-width: 93vw;
-          min-height: 85vh;
+          min-height: 93%;
           background-color: rgb(1, 24, 39);
           flex-direction: column;
           align-items: center;

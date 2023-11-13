@@ -1,5 +1,6 @@
 /* This is sectionOne */
 .sectionOne{
+  background-color: red;
       &_img {
           width: 100%;             
           @include breakpoint ($small) {
