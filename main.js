@@ -1,6 +1,5 @@
 
 let menuIcon = document.querySelector('.header_menu');
-
 let closeIcon = document.querySelector('.header_close_menu');
 let navbar= document.querySelector('.header_navbar');
 let main= document.querySelector('.main');
