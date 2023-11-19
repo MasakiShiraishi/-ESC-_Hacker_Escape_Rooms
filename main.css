@@ -829,3 +829,66 @@ body.active {
   padding: 0;
   margin: 0;
 }
+
+.challenge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  margin: 5% auto;
+  padding-bottom: 3%;
+}
+.challenge_title {
+  font-size: 1.8em;
+  padding: 30px;
+}
+.challenge_button {
+  background-color: white;
+  color: SlateBlue;
+  font-size: 0.9em;
+  padding: 10px 25px;
+  border-radius: 3px;
+  border-color: rgb(175, 169, 209);
+  max-width: 200px;
+}
+.challenge_div_test {
+  display: flex;
+}
+
+.challenges {
+  margin: auto 10%;
+  justify-content: center;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(220px, auto)); */
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 1rem;
+  grid-column-gap: 3rem;
+}
+
+.sectionTwo_div1_width {
+  min-width: 320px;
+  min-height: 470px;
+  border: 0.5px rgb(143, 132, 132);
+  width: auto;
+  height: auto;
+  margin: 20px;
+  border-radius: 7px;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(169, 179, 186);
+}
+@media screen and (min-width: 480px) {
+  .sectionTwo_div1_width {
+    margin: 0 3%;
+    width: 20%;
+    height: 60%;
+  }
+}
+
+.participants {
+  display: flex;
+}
+
+.title_onsiteOnline {
+  display: flex;
+  margin: auto auto 20px auto;
+}

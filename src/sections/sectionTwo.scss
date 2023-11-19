@@ -7,6 +7,9 @@
             font-size: 1.3em;          
           }
         }
+        &_challenge {
+        
+        }
         
         &_slider {
           display: flex;
@@ -38,14 +41,12 @@
           border-radius: 7px;
           box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(169, 179, 186);
           @include breakpoint ($small) { 
-            margin: 0 3%; 
-             
+            margin: 0 3%;              
               width:20%;
-              height:60%;   
+              height:60%; 
              
            }
         }
-        
         &_title_room {
           font-size: 1.1em;
           padding: 7px 0 0 13px;
