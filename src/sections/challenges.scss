@@ -25,6 +25,11 @@
           }
 }
 .challenges{
+          display: flex;
+          gap: 20px;
+          overflow-x: scroll;
+          margin: 0;
+          @include breakpoint ($small) {  
           margin:auto 10%;
           justify-content: center;
           display: grid;
@@ -33,7 +38,8 @@
           grid-template-columns: auto auto auto;
           // gap: 2em; 
           grid-row-gap: 1rem;
-           grid-column-gap: 3rem;                  
+           grid-column-gap: 3rem;    
+          }
 }
 
 .sectionTwo_div1_width {
@@ -51,10 +57,12 @@
               height:60%;              
            }
         }
-        .participants {
+
+.participants {
           display: flex;
         }
-        .title_onsiteOnline{
+
+.title_onsiteOnline{
           display:flex;
           margin: auto auto 20px auto;
         }
