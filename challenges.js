@@ -39,7 +39,7 @@ async function fetchData() {
             }
         
             return stars;
-        };      
+                 };      
         
        
 

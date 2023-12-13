@@ -1,3 +1,18 @@
+#filterPanel {
+  display: none;
+  position: relative;
+ 
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+}
+.hidden{
+  display: none;
+}
 .challenge{
           display:flex;
           flex-direction: column;
