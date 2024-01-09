@@ -1,0 +1,58 @@
+.header {
+          background-color: rgb(1, 24, 39);
+          margin: auto;
+          padding: 20px 5px;
+          font-weight: bold;        
+        &_div1 {
+          display: flex;
+          align-items:flex-end;
+        }        
+        &_img {
+          padding: 20px;
+          @include breakpoint ($small) {
+            margin: 10px 10px 20px 20px;
+            width:128px;
+            height:82px;          
+          }
+        }
+        &_div2 {
+          color: white;
+          margin-left: -10px;
+          margin-bottom: 18px;
+          font-size: 1em;        
+          @include breakpoint ($small) {
+            margin-bottom: 35px;
+            @include row;            
+          }        
+          &_h1 {
+            @include breakpoint ($small) {
+              font-size: 1.4em;
+              margin-left: 15px;              
+            }
+          }
+        }
+        &_navbar{
+          @include breakpoint ($small) {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 2%;
+            
+          }
+        a {
+           text-decoration: none;
+           display: none;
+           
+          @include breakpoint ($small) {
+            display: inline;   
+            font-size: 0.8em; 
+            color: white;             
+           transition: color 0.5s ease;             
+          }
+        }
+        a:hover {
+          @include breakpoint ($small) {
+          color: rgb(138, 207,229);
+          }
+        }       
+      }
+   }

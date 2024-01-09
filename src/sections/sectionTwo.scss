@@ -1,0 +1,116 @@
+.sectionTwo{
+  &_title_popularChallenges {
+          font-size: 1em;
+          padding: 10px 10px 50px 10px;
+          text-align: center;
+          @include breakpoint ($small) {
+            font-size: 1.3em;          
+          }
+        }
+        
+        &_slider {
+          display: flex;
+          gap: 20px;
+          overflow-x: scroll;
+          margin: 0;
+          @include breakpoint ($small) {            
+            margin: 30px 20px 50px 30px; 
+            padding-bottom: 20px;
+            //overflow-x:hidden ;                     
+            justify-content: center;       
+          }
+        }
+        
+        &_hacker_img {
+          max-width: 100%;
+          width: 100%;
+          border-radius: 7px;
+          @include breakpoint ($small) {
+           height:25vh;          
+         }          
+        }
+        
+        &_div1 {
+          min-width: 300px;
+          border: 0.5px rgb(143, 132, 132);
+          width: 300px;
+          margin: 20px;
+          border-radius: 7px;
+          box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(169, 179, 186);
+          @include breakpoint ($small) { 
+            margin: 0 3%; 
+             
+              width:20%;
+              height:60%;   
+             
+           }
+        }
+        
+        &_title_room {
+          font-size: 1.1em;
+          padding: 7px 0 0 13px;
+          @include breakpoint ($small){
+            font-size: 0.8em;
+         }
+        }
+        
+        &_div2 {
+          display: flex;
+          align-items: center;
+        
+          img {
+            padding-left: 10px;
+            width: 5%;
+            height: auto;
+            @include breakpoint ($small) {
+              width: 3.5%;
+               height: auto;
+           }
+          }       
+        
+        &_2-6 {
+          padding-left: 10px;
+          font-size: 0.7em;
+          @include breakpoint ($small) {
+            font-size: 0.5em;
+            margin-left: 20%;
+         }
+        }
+      }
+        &_praetera {
+          font-size: 0.8em;
+          padding: 20px 10px;
+          @include breakpoint ($small){
+            font-size: 0.6em;
+         }
+        }
+        &_div3{
+          &_button_book_this_room {
+            background-color: rgb(227, 23, 10);
+            color: white;
+            font-size: 0.7em;
+            padding: 10px 25px;
+            border-radius: 5px;
+            margin: 0 10px 15px 120px;
+            border-style: none;
+            @include breakpoint ($small) {
+              font-size: 0.5em;            
+              padding-right:30px;
+           }
+          }
+        }
+        &_div4 {
+             @include column;
+             margin: 30px 60px 70px 60px;
+             @include breakpoint ($small){
+                flex-direction: row-reverse;
+                 justify-content: center;
+         }     
+          &_button_on_site_challenges {
+             @include sectionOne_two_button;
+        }           
+        &_link {
+             @include sectionOne_two_div4_link;
+        }
+      }
+    }
