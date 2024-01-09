@@ -52,7 +52,8 @@
 @mixin sectionFour_Five_img {
   object-fit: cover;
   width: 100vw;
-  max-width: 100%;
+  max-width: 100%;  
+  margin-bottom: -1.5%;   
 
   @include breakpoint ($small) {
     min-height: 270px;
@@ -83,10 +84,15 @@
   }
 
   @include breakpoint ($large) {
+    font-size: 1.2em;
+  }
+
+  @include breakpoint ($X-large) {
     font-size: 1.3em;
   }
 
   @include breakpoint ($extra-large) {
+    margin: 10px 7px 10px 30px;
     width: 33vw;
   }
 }
@@ -104,10 +110,14 @@
   }
 
   @include breakpoint ($large) {
+    font-size: 0.8em;
+  }
+  @include breakpoint ($X-large) {
     font-size: 0.9em;
   }
 
   @include breakpoint ($extra-large) {
+    margin: 10px 7px 10px 30px;
     width: 30vw;
   }
 }
@@ -131,9 +141,13 @@
   }
   @include breakpoint ($large) {
     width: 25vw;
+    font-size: 0.8em;
+  }
+  @include breakpoint ($X-large) {
     font-size: 0.9em;
   }
   @include breakpoint ($extra-large) {
+    margin: 10px 7px 10px 30px;
     width: 23vw;
     height: 7vh;
   }
