@@ -18,14 +18,24 @@
                 <h1 class="header_div2_h1">Rooms</h1>
             </div>
         </div>
-        <nav class="header_navbar">
+        <button aria-label="Open navbar" aria-controls="navbar" class="header__navbarButton"></button>
+        <nav class="navbar" id="navbar">
+            <ul class="navbar__menu" role="menubar">
+                <li class="navbar__menuItem" role="menuitem"><a href="">Play online</a></li>
+                <li class="navbar__menuItem" role="menuitem"><a href="">Play on-site</a></li>
+                <li class="navbar__menuItem" role="menuitem"><a href="">The story</a></li>
+                <li class="navbar__menuItem" role="menuitem"><a href="">Contact us</a></li>
+            </ul>
+
+        </nav>
+        <!-- <nav class="header_navbar" id="header_navbar">
              <ul class="header_navbar_menu">
             <a class="header_navbar_link" href="">Play online</a>
             <a class="header_navbar_link" href="">Play on-site</a>
             <a class="header_navbar_link" href="">The story</a>
             <a class="header_navbar_link" href="">Contact us</a>
         </ul>
-        </nav>
+        </nav> -->
     </header>
     <main>
         <section class="sectionOne">
@@ -201,7 +211,23 @@
     </div>
     </div>
     </footer>
+    <script>
+        function initializeMobileMenu(){
+          const button = document.createElement('button');
+          button.setAttribute('aria-label', 'Open navbar');
+          button.setAttribute('aria-controls', 'navbar');
+          button.classList.add('header__navbarButton');
+          button.append(document.createElement('span'));
+         
+          document.querySelector('#navbar').before(button);
 
+          button.addEventListener('click', () => {
+            document.body.classList.toggle('navbarOpen');
+          });
+        }
+
+        initializeMobileMenu()
+    </script>
 </body>
 
 </html>
