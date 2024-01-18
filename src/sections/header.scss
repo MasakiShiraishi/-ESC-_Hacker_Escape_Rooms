@@ -2,7 +2,10 @@
           background-color: rgb(1, 24, 39);
           margin: auto;
           padding: 20px 5px;
-          font-weight: bold;        
+          font-weight: bold;   
+          * {
+            color: white;
+          }     
         &_div1 {
           display: flex;
           align-items:flex-end;
@@ -105,6 +108,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            
             padding: 0;
             box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
           }
@@ -114,11 +118,16 @@
             padding: 1rem 0;
       
             a {
-              font-weight: bold;
+              font-size: 1.5rem;
+              text-decoration: none;
+              @include breakpoint ($small){
+                font-weight: bold;
               font-size: 2rem;
       
               padding: 0.5rem 2rem;
-              text-decoration: none;
+              
+              }
+              
       
               &:hover {
                 color: #8ACFE5;

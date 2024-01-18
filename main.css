@@ -11,6 +11,9 @@
   padding: 20px 5px;
   font-weight: bold;
 }
+.header * {
+  color: white;
+}
 .header_div1 {
   display: flex;
   align-items: flex-end;
@@ -124,11 +127,18 @@
     padding: 1rem 0;
   }
   .navbar__menuItem a {
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .navbar__menuItem a {
     font-weight: bold;
     font-size: 2rem;
     padding: 0.5rem 2rem;
-    text-decoration: none;
   }
+}
+@media screen and (max-width: 768px) {
   .navbar__menuItem a:hover {
     color: #8ACFE5;
   }
